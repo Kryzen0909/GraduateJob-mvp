@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Orijinal Anasayfa</title>
+    <style>
+        /* Tarayıcı varsayılan boşluklarını sıfırla */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html, body {
+            height: 100%;
+            background-color: whitesmoke;
+        }
+
+
+        .top-block {
+            width: 100%;
+            background-color: #f0f0f0;
+            border-bottom: 2px solid black;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+            position: fixed; 
+            top: 0;
+            left: 0;
+            z-index: 10;
+        }
+
+        .center {
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            flex: 1;
+        }
+
+        .right {
+            display: flex;
+            gap: 15px;
+            margin-left: auto;
+        }
+
+     
+        #özellikler {
+            background-color: cornflowerblue;
+            width: 120px;
+            height: 100vh; 
+            padding-top: 80px; 
+            position: fixed; 
+            top: 0;
+            left: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .özel {
+            background-color: lightblue;
+            color: rgb(75, 75, 67);
+            width: 100px;
+            text-align: left;
+            margin: 15px 0;
+            margin-right: 30px;
+            padding: 5px;
+            border-radius: 5px;
+        }
+
+        /* İçerik kısmı */
+        #isler-container {
+            margin-left: 140px; 
+            padding-top: 80px; 
+            padding-right: 20px;
+        }
+
+        .iş {
+            background-color: lightblue;
+            margin-bottom: 30px;
+            padding: 50px;
+            width: 70%;
+            border-radius: 8px;
+        }
+
+        #işgerek {
+            background-color: aliceblue;
+            width: 100%;
+            height: 100px;
+            overflow-y: auto;
+            margin-top: 10px;
+        }
+
+        .normalgönder, .testlegönder {
+            background-color: white;
+            margin-top: 10px;
+            padding: 8px 12px;
+            border: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+
+        .testlegönder:hover,
+        .normalgönder:hover {
+            background-color: rgb(163, 163, 163);
+            transition: 0.3s;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Üst bar -->
+    <div class="top-block">
+        <div class="center">Homepage</div>
+        <div class="right">
+            <img src="kullanıcı.jpg" alt="" style="width: 50px; height: 50px; border-radius: 50%;">
+            <a href="Kişiselsayfa.html">Your Page</a>
+        </div>
+    </div>
+
+    <!-- Sol menü -->
+    <div id="özellikler">
+        <div class="özel">Your applications</div>
+        <div class="özel">People near you</div>
+        <div class="özel">X</div>
+        <div class="özel">X</div>
+    </div>
+
+    <!-- İçerik -->
+    <div id="isler-container">
+        <div class="iş">
+            Job 1
+            <div id="işgerek">
+                <ul>
+                    <li>Full stack developer</li>
+                    <li>3 Years of experience</li>
+                    <li>2 Years of experience either in Phyton or C</li>
+                </ul>
+            </div>
+            <input type="submit" value="Send" class="normalgönder">
+            <a href="testlegönder.html">
+                <input type="submit" value="Send With Test" class="testlegönder">
+            </a>
+        </div>
+
+        <div class="iş">Job 2
+            <div id="işgerek"></div>
+            <input type="submit" value="Send" class="normalgönder">
+            <a href="testlegönder.html">
+                <input type="submit" value="Send With Test" class="testlegönder">
+            </a>
+        </div>
+
+        <div class="iş">Job 3
+            <div id="işgerek"></div>
+            <input type="submit" value="Send" class="normalgönder">
+            <a href="testlegönder.html">
+                <input type="submit" value="Send With Test" class="testlegönder">
+            </a>
+        </div>
+
+        <div class="iş">Job 4
+            <div id="işgerek"></div>
+            <input type="submit" value="Send" class="normalgönder">
+            <a href="testlegönder.html">
+                <input type="submit" value="Send With Test" class="testlegönder">
+            </a>
+        </div>
+    </div>
+
+</body>
+</html>

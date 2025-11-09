@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .top-block {
+            width: 100%;
+            background-color: #f0f0f0;
+            border-bottom: 2px solid black;
+            padding: 10px 20px;
+            display: flex;
+            align-items: center;
+        }
+
+        .center {
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            flex: 1; 
+        }
+
+        .right {
+            display: flex;
+            gap: 15px;
+            margin-left: auto; 
+        }
+
+
+        .main-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            margin: 0;
+            padding: 0;
+            gap: 200px;
+        }
+
+        #soltaraf {
+            width: 300px;
+            height: 500px;
+            background-color: rgb(147, 204, 223);
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        #Beyzam {
+            background-color: rgb(147, 204, 223);
+            width: 500px;
+            height: 500px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top-block">
+        <div class="center">Your Page</div>
+        <div class="right">
+            <div>
+                <img src="ev ikonu.jpg" style="width: 20px; height: 20px;">
+                <a href="Anasayfa.html">Homepage</a>
+                Selected Scheme : <select >
+                    <option value="Kişisel Düzen">Personal Scheme</option>
+                    <option value="Grup Düzeni">Group Scheme</option>
+                    <option value="Şirket Düzeni">Corporate Scheme</option>
+                    <option value="Bilmem Düzeni">Will be added</option>
+
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div id="soltaraf">
+            <img src="kullanıcı.jpg" alt="" height="100px" width="100px"
+                 style="border: 1px solid black; border-radius: 50%; margin-left: 30%; margin-top: 10px;">
+            <p>Profile İnformation</p> <br>
+            Your name: <br>
+            <input type="text"><br><br>
+            Your surname: <br>
+            <input type="text"><br><br>
+            Contact İnformation: <br>
+            <input type="text">
+        </div>
+
+        <div id="Beyzam">
+            dflslfdsk
+        </div>
+    </div>
+</body>
+</html>
